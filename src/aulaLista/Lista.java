@@ -5,6 +5,10 @@ public class Lista {
 	private No fim;
 	private No inicio;
 	
+	public int getTamanho() {
+		return tamanho;
+	}
+	
 	public boolean estaVazia() {  //esse metodo nao precisa receber nada, pois recebe o tamanho da propria classe
 		return tamanho == 0;   
 	}
