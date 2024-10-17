@@ -32,16 +32,12 @@ public class Lista {
 	
 	public Object get(int index) throws Exception {  //dado um índice, retorna um valor
 		if (index >= tamanho || index < 0) {
-			throw new Exception("Índice inválido");
+			throw new Exception("Índice inválido.");
 		}
-		Object info = inicio.info;
-		
-		inicio = inicio.prox;
-		tamanho--;
-		if(tamanho == 0) {
-			fim = null;
+		No noAtual = inicio;
+		for(int i = 0; i < index; i++) {
+			noAtual = inicio.prox;
 		}
-		return info;
-	
+		return noAtual.info;
 	}
 }
