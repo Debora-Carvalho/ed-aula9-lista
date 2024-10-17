@@ -15,6 +15,13 @@ public class Principal {
 		}
 		
 		lista.remover(2);
+		
+		//agora, a letra c estará removida da letra
+		
+		for (int i = 0; i < lista.getTamanho(); i++) {
+			System.out.println(lista.get(i));		
+		}
+		
 
 	}
 
