@@ -40,4 +40,22 @@ public class Lista {
 		}
 		return noAtual.info;
 	}
+	
+	
+	public boolean remover(int index) throws Exception {  //dado um índice, remove um item da lista
+		if (index >= tamanho || index < 0) {
+			return false;
+		}
+		No noAtual = inicio;
+		No noAnt = null;         //criar uma nova variável para acessar o nó anterior
+		
+		for(int i = 0; i < index; i++) {
+			noAnt = noAtual;
+			noAtual = noAtual.prox;
+		}
+		noAnt.prox = noAtual.prox;
+		tamanho--;
+		return true;
+		
+	}
 }
