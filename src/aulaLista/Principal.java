@@ -3,7 +3,8 @@ package aulaLista;
 public class Principal {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Lista lista = new Lista();
+		System.out.println(lista.estaVazia() ? "Vazia" : "Não vazia");  //operador ternário
 
 	}
 
